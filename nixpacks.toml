@@ -1,0 +1,12 @@
+#Este fichero es vital para que cierto programa (Qlify?) pueda entender el proyecto
+[phases.setup]
+nixPkgs= ["bun"]
+
+[phases.install]
+cmds= ["bum install"]
+
+[phases.build]
+cmds= []
+
+[start]
+cmd= "bun run start"
