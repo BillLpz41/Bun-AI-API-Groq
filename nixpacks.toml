@@ -1,4 +1,5 @@
-#Este fichero es vital para que cierto programa (Qlify?) pueda entender el proyecto
+#Este fichero es vital para que cierto programa (coolify) pueda entender el proyecto
+#Aunque este proyecto lo desplegaré en Netlify
 [phases.setup]
 nixPkgs= ["bun"]
 
