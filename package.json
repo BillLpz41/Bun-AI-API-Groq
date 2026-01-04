@@ -4,13 +4,21 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "bun run index.ts",
-    "dev": "bun --watch index.ts"
-  }, 
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "_comment1": "Cambio del start 'bun index.ts' a 'npm run index.ts' para usar Node.js en lugar de Bun y luego 'node dist/index.js'",
+    "dev": "npm --watch index.ts",
+    "_comment2": "Cambio de 'bun dev' a 'npm --watch index.ts'"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "typescript": "^5.x"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "@cerebras/cerebras_cloud_sdk": "^1.64.1",
+    "groq-sdk": "^0.37.0"
   }
 }
