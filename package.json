@@ -7,8 +7,8 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "_comment1": "Cambio del start 'bun index.ts' a 'npm run index.ts' para usar Node.js en lugar de Bun y luego 'node dist/index.js'",
-    "dev": "npm --watch index.ts",
-    "_comment2": "Cambio de 'bun dev' a 'npm --watch index.ts'"
+    "dev": "npm --watch dist/index.js",
+    "_comment2": "Cambio de 'bun dev' a 'npm --watch index.ts' y luego 'npm --watch dist/index.js' para usar Node.js en lugar de Bun"
   },
   "devDependencies": {
     "@types/bun": "latest",
@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@cerebras/cerebras_cloud_sdk": "^1.64.1",
+    "dotenv": "^17.2.3",
     "groq-sdk": "^0.37.0"
   }
 }

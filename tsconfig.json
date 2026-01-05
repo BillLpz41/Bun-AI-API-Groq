@@ -2,8 +2,9 @@
   "compilerOptions": {
     // Environment setup & latest features
     //"lib": ["ESNext"],
-    "target": "ES2020",
-    "module": "es2020",
+    "target": "ES2022",
+    "module": "Nodenext",
+    "moduleResolution": "nodenext",
     "outDir": "dist",
     "rootDir": ".",
     "esModuleInterop": true,
@@ -33,5 +34,5 @@
     "noPropertyAccessFromIndexSignature": false
     
   },
-  "include": ["index.ts"]
+  "include": ["**/*.ts"]
 }
